@@ -1,7 +1,7 @@
 # odoo-connector
 These modules intend to work as a connector between odoo and mobile APPs leveraging various IoT technologies. Currently only one module to connect an Android WMS barcode-scanning-enabled APP is published though. Stay tuned.
 
-This firstly released module encapsulates several main warehouse processes, including Goods Receiving, Delivery, Putaway, Movement, Stock Query and Cycle Count, and exposes in the forms of xmlrpc as well as RESTful styple web services. And as you may already realize, we have a readily available Android APP named mWMS and X3 barcode scanner. Shoot us an email at info@ilodasolutions.com or visit our website www.ilodasolutions.com for more.
+This firstly released module encapsulates several main warehouse processes, including Goods Receiving, Delivery, Putaway, Movement, Stock Query and Cycle Count, and exposes in the forms of xmlrpc as well as RESTful styple web services. We are trying to make your mobile APP development a breeze. And as you may already realize, we have a readily available Android APP named mWMS and X3 barcode scanner. Shoot us an email at info@ilodasolutions.com or visit our website www.ilodasolutions.com for more.
 
 Last but not least, some feature highlights of this module and its mobile partner:
 Scan EAN barcode to perform all warehouse operations.
