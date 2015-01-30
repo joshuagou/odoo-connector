@@ -1,0 +1,14 @@
+<openerp>
+	<data>
+		<record model="ir.sequence.type" id="ir_sequence_type_1">
+			<field name="name">Cycle Count Ref</field>
+			<field name="code">stock.inventory.ref</field>
+		</record>
+		<record model="ir.sequence" id="ir_sequence_1">
+			<field name="name">Cycle Count Ref</field>
+			<field name="code">stock.inventory.ref</field>
+			<field name="prefix">INV</field>
+			<field name="padding">6</field>
+		</record>
+	</data>
+</openerp>

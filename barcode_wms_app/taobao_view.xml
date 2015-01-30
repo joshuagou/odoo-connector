@@ -1,0 +1,44 @@
+<openerp>
+	<data>
+		<record model="ir.ui.view" id="view_taobao_auth_tree">
+			<field name="name">Taobao Auth Tree</field>
+			<field name="model">ida.app.taobao.auth</field>
+			<field name="arch" type="xml">
+				<tree string="Taobao Auth">
+					<field name="taobao_user_nick"/>
+					<field name="access_token"/>
+					<field name="refresh_token"/>
+					<field name="is_active"/>
+				</tree>
+			</field>
+		</record>
+		<record model="ir.ui.view" id="view_taobao_auth_form">
+			<field name="name">Taobao Auth Form</field>
+			<field name="model">ida.app.taobao.auth</field>
+			<field name="arch" type="xml">
+				<form string="Taobao Auth Form" version="7.0">
+					<header>
+						<button name="get_orders" string="Get Orders" type="object"
+							 group="base.group_user" class="oe_highlight"/>
+					</header>
+					<sheet>
+						<group>
+							<field name="taobao_user_nick"/>
+							<field name="access_token"/>
+							<field name="refresh_token"/>
+							<field name="is_active"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record model="ir.actions.act_window" id="action_taobao_auth">
+			<field name="name">Action Tabao Auth</field>
+			<field name="res_model">ida.app.taobao.auth</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="menu_taobao_auth" name="Taobao Auth" parent="base.menu_base_config"
+			action="action_taobao_auth" sequence="35" groups="stock.group_locations"/>
+	</data>
+</openerp>

@@ -1,0 +1,10 @@
+<openerp>
+	<data>
+		<record model="ir.property" id="property_enable_ean">
+			<field name="name">property_enable_ean</field>
+			<field name="fields_id" search="[('model', '=', 'product.product'), ('name', '=', 'ean_enabled')]"></field>
+			<field name="type">boolean</field>
+			<field name="value_integer" eval="0"/>
+		</record>
+	</data>
+</openerp>

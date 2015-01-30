@@ -1,0 +1,38 @@
+<openerp>
+	<data>
+		<record id="view_ida_app_license_tree" model="ir.ui.view">
+			<field name="name">IDA App License Tree</field>
+			<field name="model">ida.app.license</field>
+			<field name="arch" type="xml">
+				<tree string="License">
+					<field name="product_code"/>
+					<field name="mac_id"/>
+					<field name="is_active"/>
+				</tree>
+			</field>
+		</record>
+		<record id="view_ida_app_license_form1" model="ir.ui.view">
+			<field name="name">IDA App License Form</field>
+			<field name="model">ida.app.license</field>
+			<field name="arch" type="xml">
+				<form string="License" version="7.0">
+					<sheet>
+						<group>
+							<field name="product_code"/>
+							<field name="mac_id"/>
+							<field name="is_active"/>
+						</group>
+					</sheet>
+				</form>
+			</field>
+		</record>
+		<record id="action_ida_app_license" model="ir.actions.act_window">
+			<field name="name">Action IDA App License</field>
+			<field name="res_model">ida.app.license</field>
+			<field name="view_type">form</field>
+			<field name="view_mode">tree,form</field>
+		</record>
+		<menuitem id="menu_ida_app_license" name="WMS APP License" parent="base.menu_config"
+			action="action_ida_app_license" sequence="5"/>
+	</data>
+</openerp>
