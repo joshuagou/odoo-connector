@@ -8,5 +8,6 @@ Last but not least, some feature highlights of this module and its mobile partne
 Operator can choose from a product list if EAN barcode is not available, as a fallback solution.
 Daily operation is highly mobilized via a barcode scanner attached to operators' cell phone.
 Most of the relatively complicated tasks in the ERP backend are moved seamlessly into the APP running on cell phones.
+Barcode-scanning prevents human errors.
 Can automatically synchronize your sales orders from ecommerce websites. E.g. Taobao.
 Can create shipment and print labels for ship service providers right on delivery automatically. E.g. Fedex.
